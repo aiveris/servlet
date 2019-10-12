@@ -1,0 +1,28 @@
+<web-app>
+    <!-- 0. Hello world Servlet -->
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>cf.mindaugas.ex0_helloservlet.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>Greeter</servlet-name>
+        <servlet-class>cf.mindaugas.ex1_querystring.Greeting</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Greeter</servlet-name>
+        <url-pattern>/greeter</url-pattern>
+    </servlet-mapping>
+    <!-- 2. Working with form data -->
+    <servlet>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>cf.mindaugas.ex2_RegistrationServlets.RegistrationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+</web-app>
